@@ -1,36 +1,47 @@
-const container = document.getElementById("malla-container");
-let materiasAprobadas = JSON.parse(localStorage.getItem("materiasAprobadas")) || [];
+async function cargarMalla() {
+  const response = await fetch('data.json');
+  const data = await response.json();
 
-fetch("data.json")
-  .then(res => res.json())
-  .then(data => {
-    Object.entries(data).forEach(([semestre, materias]) => {
-      const div = document.createElement("div");
-      div.className = "semestre";
-      div.innerHTML = `<h2>Semestre ${semestre}</h2>`;
+  const contenedor = document.getElementById('malla-container');
+  contenedor.innerHTML = '';
 
-      materias.forEach(m => {
-        const matDiv = document.createElement("div");
-        matDiv.className = "materia";
-        if (m.enfasis) matDiv.classList.add("enfasis");
-        if (materiasAprobadas.includes(m.id)) matDiv.classList.add("aprobada");
+  Object.keys(data).forEach(semestre => {
+    const divSemestre = document.createElement('div');
+    divSemestre.classList.add('semestre');
+    divSemestre.innerHTML = `<h2>Semestre ${semestre}</h2>`;
 
-        matDiv.textContent = m.nombre;
-        matDiv.title = `${m.descripcion} (${m.creditos} créditos)`;
+    data[semestre].forEach(materia => {
+      const divMateria = document.createElement('div');
+      divMateria.classList.add('materia');
+      if (materia.enfasis) divMateria.classList.add('enfasis');
 
-        matDiv.addEventListener("click", () => {
-          if (!materiasAprobadas.includes(m.id)) {
-            materiasAprobadas.push(m.id);
-          } else {
-            materiasAprobadas = materiasAprobadas.filter(id => id !== m.id);
-          }
-          localStorage.setItem("materiasAprobadas", JSON.stringify(materiasAprobadas));
-          matDiv.classList.toggle("aprobada");
-        });
+      const materiaId = materia.id;
+      if (localStorage.getItem(materiaId) === 'true') {
+        divMateria.classList.add('completada');
+      }
 
-        div.appendChild(matDiv);
+      divMateria.innerHTML = `
+        <strong>${materia.nombre}</strong>
+        <br><small>${materia.creditos} créditos</small>
+        ${materia.prerrequisitos ? `<br><small><em>Prerrequisitos:</em> ${materia.prerrequisitos}</small>` : ''}
+        ${materia.descripcion ? `<br><small>${materia.descripcion}</small>` : ''}
+      `;
+
+      divMateria.addEventListener('click', () => {
+        if (divMateria.classList.contains('completada')) {
+          divMateria.classList.remove('completada');
+          localStorage.setItem(materiaId, 'false');
+        } else {
+          divMateria.classList.add('completada');
+          localStorage.setItem(materiaId, 'true');
+        }
       });
 
-      container.appendChild(div);
+      divSemestre.appendChild(divMateria);
     });
+
+    contenedor.appendChild(divSemestre);
   });
+}
+
+document.addEventListener('DOMContentLoaded', cargarMalla);
