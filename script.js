@@ -1,46 +1,35 @@
 async function cargarMalla() {
-  const response = await fetch('data.json');
-  const data = await response.json();
+  let data = {};
+  try {
+    const resp = await fetch('data.json');
+    data = await resp.json();
+  } catch (err) {
+    console.error('Error al cargar data.json:', err);
+    document.getElementById('malla-container').innerText = 'Error cargando la malla.';
+    return;
+  }
 
-  const contenedor = document.getElementById('malla-container');
-  contenedor.innerHTML = '';
+  const cont = document.getElementById('malla-container');
+  cont.innerHTML = '';
 
-  Object.keys(data).forEach(semestre => {
-    const divSemestre = document.createElement('div');
-    divSemestre.classList.add('semestre');
-    divSemestre.innerHTML = `<h2>Semestre ${semestre}</h2>`;
-
-    data[semestre].forEach(materia => {
-      const divMateria = document.createElement('div');
-      divMateria.classList.add('materia');
-      if (materia.enfasis) divMateria.classList.add('enfasis');
-
-      const materiaId = materia.id;
-      if (localStorage.getItem(materiaId) === 'true') {
-        divMateria.classList.add('completada');
-      }
-
-      divMateria.innerHTML = `
-        <strong>${materia.nombre}</strong>
-        <br><small>${materia.creditos} créditos</small>
-        ${materia.prerrequisitos ? `<br><small><em>Prerrequisitos:</em> ${materia.prerrequisitos}</small>` : ''}
-        ${materia.descripcion ? `<br><small>${materia.descripcion}</small>` : ''}
-      `;
-
-      divMateria.addEventListener('click', () => {
-        if (divMateria.classList.contains('completada')) {
-          divMateria.classList.remove('completada');
-          localStorage.setItem(materiaId, 'false');
-        } else {
-          divMateria.classList.add('completada');
-          localStorage.setItem(materiaId, 'true');
-        }
+  Object.keys(data).forEach(sem => {
+    const divS = document.createElement('div');
+    divS.className = 'semestre';
+    divS.innerHTML = `<h2>Semestre ${sem}</h2>`;
+    data[sem].forEach(m => {
+      const d = document.createElement('div');
+      d.className = 'materia' + (m.enfasis ? ' enfasis' : '');
+      if (localStorage.getItem(m.id)==='true') d.classList.add('completada');
+      d.innerHTML = `<strong>${m.nombre}</strong> (${m.creditos} cr)
+                     ${m.prerrequisitos?'<br><em>Prerrequisitos:</em> '+m.prerrequisitos:''}
+                     <br><small>${m.descripcion}</small>`;
+      d.addEventListener('click', () => {
+        const comp = d.classList.toggle('completada');
+        localStorage.setItem(m.id, comp);
       });
-
-      divSemestre.appendChild(divMateria);
+      divS.append(d);
     });
-
-    contenedor.appendChild(divSemestre);
+    cont.append(divS);
   });
 }
 
