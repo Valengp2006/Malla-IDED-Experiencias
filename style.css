@@ -1,76 +1,88 @@
 :root {
-  --fondo: #fff0f6;
-  --rosado: #ff91b3;
-  --morado: #c08fe2;
-  --dorado: #f9cb9c;
-  --texto: #333;
-  --aprobado: #999999;
+  --pink: #f9c5d1;
+  --gold: #f4e2d8;
+  --purple: #d0bdf4;
+  --background: #fff8fc;
+  --text: #333;
+  --completed: #999;
+  --font: 'Segoe UI', sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--fondo);
+  background: var(--background);
+  font-family: var(--font);
+  color: var(--text);
   margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, var(--pink), var(--gold), var(--purple));
   padding: 1rem;
-  color: var(--texto);
-}
-
-header, footer {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
-h1 {
-  color: var(--morado);
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: #777;
 }
 
 #malla-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
 .semestre {
-  border-radius: 12px;
   padding: 1rem;
-  background-color: var(--rosado);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  background-color: var(--pink);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: background-color 0.3s ease;
 }
 
 .semestre:nth-child(2n) {
-  background-color: var(--morado);
-  color: white;
+  background-color: var(--gold);
 }
-
 .semestre:nth-child(3n) {
-  background-color: var(--dorado);
+  background-color: var(--purple);
 }
 
 .semestre h2 {
+  text-align: center;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
-  margin-top: 0;
 }
 
 .materia {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border-radius: 8px;
-  background-color: white;
-  color: var(--texto);
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  transition: background 0.2s;
   position: relative;
-  transition: all 0.2s ease;
-  border-left: 4px solid transparent;
+}
+
+.materia:hover {
+  background-color: #f0f0f0;
 }
 
 .materia.enfasis {
-  border-left: 4px solid var(--morado);
+  border-left: 4px solid var(--purple);
 }
 
-.materia.aprobada {
+.materia.completada {
   text-decoration: line-through;
-  color: var(--aprobado);
-  opacity: 0.6;
+  color: var(--completed);
+  background-color: #f3f3f3;
 }
