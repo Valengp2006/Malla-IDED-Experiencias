@@ -228,7 +228,7 @@
     "nombre": "Animación Digital",
     "creditos": 2,
     "prerrequisitos": "Introducción a la Animación",
-    "descripcion": "Estrategias de modelado matemático en sistemas interactivos.",
+    "descripcion": "Creación de animaciones digitales 2D y 3D aplicadas a productos interactivos.",
     "enfasis": false
   },
   {
@@ -236,7 +236,7 @@
     "nombre": "Diseño Sonoro",
     "creditos": 2,
     "prerrequisitos": "Producción de Audio",
-    "descripcion": "Estrategias de modelado matemático en sistemas interactivos.",
+    "descripcion":  "Diseño y edición de ambientes sonoros, efectos y música para medios digitales interactivos.",
     "enfasis": false
   },
   {
@@ -244,7 +244,7 @@
     "nombre": "Metodología de la Investigación",
     "creditos": 1,
     "prerrequisitos": "",
-    "descripcion": "Estrategias de modelado matemático en sistemas interactivos.",
+    "descripcion": "Fundamentos de investigación académica aplicados al análisis de proyectos de entretenimiento digital.",
     "enfasis": false
   },
   {
@@ -260,7 +260,7 @@
     "nombre": "Optativa CBD",
     "creditos": 3,
     "prerrequisitos": "",
-    "descripcion": "Estrategias de modelado matemático en sistemas interactivos.",
+    "descripcion": "Aplicación de modelos matemáticos en simulación, optimización y diseño de sistemas interactivos.",
     "enfasis": false
   },
 ],
@@ -304,7 +304,7 @@
     "prerrequisitos": "Sistemas Computacionales, Cálculo Integral",
     "descripcion": "Modelos probabilísticos aplicados a simulación y diseño interactivo.",
     "enfasis": false
-  }
+  },
   {
     "id": "prototipado3d",
     "nombre": "Prototipado 3D",
@@ -458,7 +458,7 @@
     "id": "ux2",
     "nombre": "Diseño de Interfaz y Experiencias de Usuario II",
     "creditos": 2,
-    "prerrequisitos": "Diseño de Interfaz y Experiencias de Usuario I",
+    "prerrequisitos": "Diseño de Interfaz y Experiencias de Usuario",
     "descripcion": "Estrategias avanzadas de diseño centrado en el usuario y testing.",
     "enfasis": true
   }
