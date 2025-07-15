@@ -250,7 +250,7 @@
       "id": "modelamiento-matematico",
       "nombre": "Modelamiento Matemático",
       "creditos": 3,
-      "prerrequisitos": ["calculo2", "algebra-lineal"],
+      "prerrequisitos": ["calculo2"],
       "descripcion": "Aplicaciones matemáticas en simulación y sistemas interactivos.",
       "enfasis": false
     },
