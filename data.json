@@ -70,7 +70,7 @@
       "id": "taller2",
       "nombre": "Taller II: Métodos de Diseño",
       "creditos": 2,
-      "prerrequisitos": "Taller I",
+      "prerrequisitos": "Taller I: Procesos Creativos",
       "descripcion": "Introducción a métodos de diseño aplicados al desarrollo de ideas en entretenimiento digital.",
       "enfasis": false
     },
@@ -94,7 +94,7 @@
       "id": "game-design",
       "nombre": "Introducción al Game Design",
       "creditos": 2,
-      "prerrequisitos": ",
+      "prerrequisitos": "",
       "descripcion": "Fundamentos de diseño de videojuegos y experiencias lúdicas.",
       "enfasis": false
     },
@@ -256,7 +256,7 @@
     "enfasis": false
   },
   {
-    "id": "optativa-CBD,
+    "id": "optativa-CBD",
     "nombre": "Optativa CBD",
     "creditos": 3,
     "prerrequisitos": "",
