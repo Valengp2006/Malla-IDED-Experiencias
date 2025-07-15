@@ -1,0 +1,76 @@
+:root {
+  --fondo: #fff0f6;
+  --rosado: #ff91b3;
+  --morado: #c08fe2;
+  --dorado: #f9cb9c;
+  --texto: #333;
+  --aprobado: #999999;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fondo);
+  margin: 0;
+  padding: 1rem;
+  color: var(--texto);
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: var(--morado);
+}
+
+#malla-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.semestre {
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: var(--rosado);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.semestre:nth-child(2n) {
+  background-color: var(--morado);
+  color: white;
+}
+
+.semestre:nth-child(3n) {
+  background-color: var(--dorado);
+}
+
+.semestre h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.materia {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: white;
+  color: var(--texto);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.materia.enfasis {
+  border-left: 4px solid var(--morado);
+}
+
+.materia.aprobada {
+  text-decoration: line-through;
+  color: var(--aprobado);
+  opacity: 0.6;
+}
