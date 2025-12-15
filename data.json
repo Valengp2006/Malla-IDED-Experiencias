@@ -4,7 +4,7 @@
       "id": "taller1",
       "nombre": "Taller I: Procesos creativos",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Introducción al diseño y pensamiento creativo aplicado al entretenimiento digital.",
       "enfasis": false
     },
@@ -12,7 +12,7 @@
       "id": "narrativa",
       "nombre": "Narrativa literaria e hipertextual",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Estudio de la estructura narrativa y su aplicación en medios digitales.",
       "enfasis": false
     },
@@ -20,7 +20,7 @@
       "id": "dibujo",
       "nombre": "Dibujo Creativo",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Exploración del dibujo como herramienta de comunicación visual.",
       "enfasis": false
     },
@@ -28,7 +28,7 @@
       "id": "intro-carrera",
       "nombre": "Introducción a Ingenieria en diseño de entretenimiento digital",
       "creditos": 1,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Visión general del campo del entretenimiento digital y el rol del ingeniero diseñador.",
       "enfasis": false
     },
@@ -36,7 +36,7 @@
       "id": "calculo1",
       "nombre": "Cálculo Diferencial",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Fundamentos del cálculo diferencial en una variable real.",
       "enfasis": false
     },
@@ -44,7 +44,7 @@
       "id": "geometria",
       "nombre": "Geometría Analítica",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Estudio de coordenadas cartesianas, vectores y cónicas.",
       "enfasis": false
     },
@@ -52,7 +52,7 @@
       "id": "humanismo",
       "nombre": "Humanismo y cultura ciudadana",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": [Ninguno],
       "descripcion": "Reflexión crítica sobre la relación entre tecnología, ciencia y humanidad.",
       "enfasis": false
     },
@@ -60,7 +60,7 @@
       "id": "lengua-cultura",
       "nombre": "Lengua y Cultura",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": [Ninguno],
       "descripcion": "Desarrollo de habilidades lingüísticas y culturales para la comunicación académica.",
       "enfasis": false
     }
@@ -70,7 +70,7 @@
       "id": "taller2",
       "nombre": "Taller II: Métodos de Diseño",
       "creditos": 2,
-      "prerrequisitos": ["taller1"],
+      "prerrequisitos": ["Taller 1: Procesos Creativos"],
       "descripcion": "Introducción a métodos de diseño aplicados al desarrollo de ideas en entretenimiento digital.",
       "enfasis": false
     },
@@ -78,7 +78,7 @@
       "id": "programacion1",
       "nombre": "Fundamentos de Programación",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Bases de la programación estructurada y resolución de problemas.",
       "enfasis": false
     },
@@ -86,7 +86,7 @@
       "id": "arte-digital",
       "nombre": "Fundamentos de Arte Digital",
       "creditos": 2,
-      "prerrequisitos": ["dibujo"],
+      "prerrequisitos": ["Dibujo Creativo"],
       "descripcion": "Técnicas básicas y principios del arte digital aplicado al diseño.",
       "enfasis": false
     },
@@ -94,7 +94,7 @@
       "id": "game-design",
       "nombre": "Introducción al Game Design",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Fundamentos de diseño de videojuegos y experiencias lúdicas.",
       "enfasis": false
     },
@@ -102,7 +102,7 @@
       "id": "calculo2",
       "nombre": "Cálculo Integral",
       "creditos": 3,
-      "prerrequisitos": ["calculo1"],
+      "prerrequisitos": ["Cálculo Diferencial"],
       "descripcion": "Técnicas de integración y aplicaciones del cálculo integral.",
       "enfasis": false
     },
@@ -110,7 +110,7 @@
       "id": "fisica1",
       "nombre": "Física Mecánica",
       "creditos": 3,
-      "prerrequisitos": ["geometria", "calculo1"],
+      "prerrequisitos": ["Geometría Analítica", "Cálculo Diferencial"],
       "descripcion": "Cinemática, dinámica y leyes del movimiento.",
       "enfasis": false
     },
@@ -118,7 +118,7 @@
       "id": "etica",
       "nombre": "Ética General",
       "creditos": 1,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Reflexión sobre dilemas éticos y la responsabilidad social del profesional.",
       "enfasis": false
     },
@@ -126,7 +126,7 @@
       "id": "emprendimiento",
       "nombre": "Emprendimiento y responsabilidad social",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Principios básicos para el desarrollo de ideas emprendedoras.",
       "enfasis": false
     }
@@ -136,7 +136,7 @@
       "id": "taller3",
       "nombre": "Taller III: Diseño en contexto",
       "creditos": 2,
-      "prerrequisitos": ["taller2"],
+      "prerrequisitos": ["Taller II: Métodos de Diseño"],
       "descripcion": "Diseño centrado en el usuario y prototipado rápido en contextos interactivos.",
       "enfasis": false
     },
@@ -144,7 +144,7 @@
       "id": "poo",
       "nombre": "Programación y Diseño Orientada a Objetos",
       "creditos": 3,
-      "prerrequisitos": ["programacion1"],
+      "prerrequisitos": ["Fundamentos de Programación"],
       "descripcion": "Principios de POO usando lenguajes como C#.",
       "enfasis": false
     },
@@ -152,7 +152,7 @@
       "id": "cognitivos",
       "nombre": "Procesos Cognitivos",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Estudio de la percepción y comportamiento humano frente a interfaces y medios.",
       "enfasis": false
     },
@@ -160,7 +160,7 @@
       "id": "intro-animacion",
       "nombre": "Introducción a la Animación",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Fundamentos de animación cuadro a cuadro y digital.",
       "enfasis": false
     },
@@ -168,7 +168,7 @@
       "id": "audio",
       "nombre": "Producción de Audio",
       "creditos": 2,
-      "prerrequisitos": ["fisica1"],
+      "prerrequisitos": ["Fisica Mecánica"],
       "descripcion": "Fundamentos técnicos y creativos del audio para medios digitales.",
       "enfasis": false
     },
@@ -176,7 +176,7 @@
       "id": "fisica2",
       "nombre": "Métodos Experimentales en Física",
       "creditos": 2,
-      "prerrequisitos": ["fisica1", "calculo2"],
+      "prerrequisitos": ["Cálculo Integral", "Fisica Mecánica"],
       "descripcion": "Aplicación práctica de métodos físicos en laboratorio.",
       "enfasis": false
     },
@@ -184,7 +184,7 @@
       "id": "algebra-lineal",
       "nombre": "Álgebra Lineal",
       "creditos": 3,
-      "prerrequisitos": ["geometria"],
+      "prerrequisitos": ["Geometría Analítica"],
       "descripcion": "Vectores, matrices, transformaciones lineales.",
       "enfasis": false
     },
@@ -192,7 +192,7 @@
       "id": "cristologia",
       "nombre": "Cristología",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Formación en pensamiento cristiano aplicado a la vida y profesión.",
       "enfasis": false
     }
@@ -200,9 +200,9 @@
   "4": [
     {
       "id": "taller4",
-      "nombre": "Taller IV: Diseño de producto",
+      "nombre": "Taller IV: Diseño de Producto",
       "creditos": 2,
-      "prerrequisitos": ["taller3"],
+      "prerrequisitos": ["Taller III: Diseño en Contexto"],
       "descripcion": "Exploración de narrativa interactiva, diseño de experiencias inmersivas.",
       "enfasis": false
     },
@@ -210,7 +210,7 @@
       "id": "sistemas-comp",
       "nombre": "Sistemas Computacionales",
       "creditos": 2,
-      "prerrequisitos": ["poo"],
+      "prerrequisitos": ["Programación y Diseño Orientado a Objetos"],
       "descripcion": "Fundamentos de sistemas operativos, arquitectura y compilación.",
       "enfasis": false
     },
@@ -218,7 +218,7 @@
       "id": "sistemas-fisicos",
       "nombre": "Sistemas Físicos Interactivos",
       "creditos": 2,
-      "prerrequisitos": ["poo"],
+      "prerrequisitos": ["Programación y Diseño Orientado a Objetos"],
       "descripcion": "Electrónica básica, sensores y actuadores para crear dispositivos interactivos.",
       "enfasis": false
     },
@@ -226,7 +226,7 @@
       "id": "animacion-digital",
       "nombre": "Animación Digital",
       "creditos": 2,
-      "prerrequisitos": ["intro-animacion"],
+      "prerrequisitos": ["Introducción a la Animación"],
       "descripcion": "Estrategias de animación digital y modelado 2D/3D.",
       "enfasis": false
     },
@@ -234,7 +234,7 @@
       "id": "diseno-sonoro",
       "nombre": "Diseño Sonoro",
       "creditos": 2,
-      "prerrequisitos": ["audio"],
+      "prerrequisitos": ["Producción de Audio"],
       "descripcion": "Diseño y manipulación del sonido para experiencias interactivas.",
       "enfasis": false
     },
@@ -242,7 +242,7 @@
       "id": "metodologia-investigacion",
       "nombre": "Metodología de la Investigación",
       "creditos": 1,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Métodos científicos aplicados a la investigación en diseño.",
       "enfasis": false
     },
@@ -250,7 +250,7 @@
       "id": "modelamiento-matematico",
       "nombre": "Modelamiento Matemático",
       "creditos": 3,
-      "prerrequisitos": ["calculo2"],
+      "prerrequisitos": ["Cálculo Integral"],
       "descripcion": "Aplicaciones matemáticas en simulación y sistemas interactivos.",
       "enfasis": false
     },
@@ -258,7 +258,7 @@
       "id": "optativa-CBD",
       "nombre": "Optativa CBD",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Curso optativo del Componente de Bienestar y Desarrollo.",
       "enfasis": false
     }
@@ -268,7 +268,7 @@
       "id": "taller5-int",
       "nombre": "Taller V: Experiencias Interactivas",
       "creditos": 3,
-      "prerrequisitos": ["taller4"],
+      "prerrequisitos": ["Taller IV: Diseño de Producto],
       "descripcion": "Diseño e implementación de prototipos interactivos físicos y digitales.",
       "enfasis": true
     },
@@ -276,7 +276,7 @@
       "id": "scripting",
       "nombre": "Scripting",
       "creditos": 2,
-      "prerrequisitos": ["sistemas-comp"],
+      "prerrequisitos": ["Sistemas Computacionales"],
       "descripcion": "Automatización y programación con scripts para entornos interactivos.",
       "enfasis": false
     },
@@ -284,15 +284,15 @@
       "id": "ux1",
       "nombre": "Diseño de Interfaz y Experiencia de Usuario",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Principios de diseño centrado en el usuario y estructuras de interfaz.",
       "enfasis": false
     },
     {
       "id": "historia",
       "nombre": "Historia y Tendencias del Entretenimiento Digital",
-      "creditos": 2,
-      "prerrequisitos": [],
+      "creditos": 1,
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Estudio de referentes, movimientos y evolución del medio.",
       "enfasis": false
     },
@@ -300,7 +300,7 @@
       "id": "estocasticos",
       "nombre": "Procesos Estocásticos",
       "creditos": 3,
-      "prerrequisitos": ["sistemas-comp", "calculo2"],
+      "prerrequisitos": ["Sistemas Computacionales", "Cálculo Integral"],
       "descripcion": "Modelos probabilísticos aplicados a simulación y diseño interactivo.",
       "enfasis": false
     },
@@ -308,7 +308,7 @@
       "id": "prototipado3d",
       "nombre": "Prototipado 3D",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Técnicas básicas de modelado e impresión 3D para prototipos físicos.",
       "enfasis": true
     },
@@ -316,7 +316,7 @@
       "id": "sistemas-fisicos-ii",
       "nombre": "Sistemas Físicos Interactivos II",
       "creditos": 2,
-      "prerrequisitos": ["sistemas-fisicos"],
+      "prerrequisitos": ["Sistemas Fisicos Interactivos I"],
       "descripcion": "Integración avanzada de sensores y actuadores con microcontroladores.",
       "enfasis": true
     },
@@ -324,7 +324,7 @@
       "id": "gamificacion",
       "nombre": "Gamification",
       "creditos": 2,
-      "prerrequisitos": ["game-design"],
+      "prerrequisitos": ["Introducción al Game Design"],
       "descripcion": "Diseño de mecánicas y estrategias motivacionales aplicadas a sistemas no lúdicos.",
       "enfasis": true
     }
@@ -334,7 +334,7 @@
       "id": "taller6-int",
       "nombre": "Taller VI: Experiencias Interactivas",
       "creditos": 3,
-      "prerrequisitos": ["taller5-int"],
+      "prerrequisitos": ["Taller V: Experiencias Interactivas"],
       "descripcion": "Exploración de sistemas inmersivos y espacios híbridos.",
       "enfasis": true
     },
@@ -342,7 +342,7 @@
       "id": "vision-artificial",
       "nombre": "Visión Artificial",
       "creditos": 2,
-      "prerrequisitos": ["poo"],
+      "prerrequisitos": ["Programación y Diseño Orientado a Objetos"],
       "descripcion": "Procesamiento de imagen y video aplicado a interacción.",
       "enfasis": true
     },
@@ -350,7 +350,7 @@
       "id": "mecanismos",
       "nombre": "Mecanismos",
       "creditos": 2,
-      "prerrequisitos": ["prototipado3d"],
+      "prerrequisitos": ["Prototipado 3D"],
       "descripcion": "Diseño de mecanismos físicos articulados para proyectos interactivos.",
       "enfasis": true
     },
@@ -358,7 +358,7 @@
       "id": "simulacion",
       "nombre": "Simulación para Sistemas Interactivos",
       "creditos": 2,
-      "prerrequisitos": ["modelamiento-matematico"],
+      "prerrequisitos": ["Modelamiento Matematico"],
       "descripcion": "Uso de software de simulación para prever comportamientos de sistemas.",
       "enfasis": false
     },
@@ -366,15 +366,15 @@
       "id": "cultura",
       "nombre": "Diseño y Cultura",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Relación entre diseño, cultura y sociedad.",
       "enfasis": false
     },
     {
       "id": "gestion",
-      "nombre": "Gestión de Proyectos de Entretenimiento Digital",
+      "nombre": "Gestión y Realización de Proyectos de Entretenimiento Digital",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Planificación, recursos y seguimiento de proyectos del sector.",
       "enfasis": false
     },
@@ -382,7 +382,7 @@
       "id": "etica-prof",
       "nombre": "Ética Profesional",
       "creditos": 1,
-      "prerrequisitos": ["etica"],
+      "prerrequisitos": ["Ética General"],
       "descripcion": "Ética aplicada al ejercicio profesional del diseño interactivo.",
       "enfasis": false
     },
@@ -390,7 +390,7 @@
       "id": "lf1",
       "nombre": "Línea de Formación I",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Asignatura electiva institucional.",
       "enfasis": false
     }
@@ -400,7 +400,7 @@
       "id": "taller7",
       "nombre": "Taller VII: Entretenimiento Digital",
       "creditos": 3,
-      "prerrequisitos": ["taller6-int"],
+      "prerrequisitos": ["Taller VI: Experiencias Interactivas"],
       "descripcion": "Desarrollo de una experiencia interactiva completa con foco en usuario y contexto.",
       "enfasis": true
     },
@@ -408,7 +408,7 @@
       "id": "visualizacion",
       "nombre": "Visualización y Diseño de Información",
       "creditos": 2,
-      "prerrequisitos": ["scripting"],
+      "prerrequisitos": ["Scripting"],
       "descripcion": "Técnicas para representar visualmente datos complejos.",
       "enfasis": false
     },
@@ -416,7 +416,7 @@
       "id": "contexto",
       "nombre": "Contexto Profesional",
       "creditos": 1,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Preparación para el ejercicio profesional y tendencias del medio.",
       "enfasis": false
     },
@@ -424,7 +424,7 @@
       "id": "optativa-cp",
       "nombre": "Optativa CP",
       "creditos": 2,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Curso optativo del componente profesional.",
       "enfasis": false
     },
@@ -432,7 +432,7 @@
       "id": "lf2",
       "nombre": "Línea de Formación II",
       "creditos": 2,
-      "prerrequisitos": ["lf1"],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Asignatura electiva institucional.",
       "enfasis": false
     },
@@ -440,7 +440,7 @@
       "id": "rvra",
       "nombre": "Realidad Virtual y Aumentada",
       "creditos": 2,
-      "prerrequisitos": ["scripting"],
+      "prerrequisitos": ["Scripting"],
       "descripcion": "Diseño y desarrollo de experiencias inmersivas en RV y RA.",
       "enfasis": true
     },
@@ -448,15 +448,15 @@
       "id": "sis-distribuidos",
       "nombre": "Sistemas Interactivos Distribuidos",
       "creditos": 2,
-      "prerrequisitos": ["sistemas-comp"],
+      "prerrequisitos": ["Sistemas Computacionales"],
       "descripcion": "Diseño de sistemas interactivos en red o conectados a internet.",
       "enfasis": true
     },
     {
       "id": "ux2",
-      "nombre": "Diseño de Interfaz y Experiencias de Usuario II",
+      "nombre": "Diseño de Interfaces y Experiencias de Usuario II",
       "creditos": 2,
-      "prerrequisitos": ["ux1"],
+      "prerrequisitos": ["Diseño de Interfaces y Experiencias de Usuario I"],
       "descripcion": "Estrategias avanzadas de diseño centrado en el usuario y testing.",
       "enfasis": true
     }
@@ -466,7 +466,7 @@
       "id": "final",
       "nombre": "Proyecto Final / Práctica / Emprendimiento",
       "creditos": 11,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Desarrollo de un proyecto integrador profesional, práctica o idea emprendedora.",
       "enfasis": false
     },
@@ -474,7 +474,7 @@
       "id": "electiva",
       "nombre": "Electiva Universitaria",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Asignatura libre elegida por el estudiante.",
       "enfasis": false
     },
@@ -482,7 +482,7 @@
       "id": "optativa-ci",
       "nombre": "Optativa CI",
       "creditos": 3,
-      "prerrequisitos": [],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Curso optativo del componente de innovación.",
       "enfasis": false
     }
