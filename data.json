@@ -52,7 +52,7 @@
       "id": "humanismo",
       "nombre": "Humanismo y cultura ciudadana",
       "creditos": 2,
-      "prerrequisitos": [Ninguno],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Reflexión crítica sobre la relación entre tecnología, ciencia y humanidad.",
       "enfasis": false
     },
@@ -60,7 +60,7 @@
       "id": "lengua-cultura",
       "nombre": "Lengua y Cultura",
       "creditos": 2,
-      "prerrequisitos": [Ninguno],
+      "prerrequisitos": ["Ninguno"],
       "descripcion": "Desarrollo de habilidades lingüísticas y culturales para la comunicación académica.",
       "enfasis": false
     }
