@@ -268,7 +268,7 @@
       "id": "taller5-int",
       "nombre": "Taller V: Experiencias Interactivas",
       "creditos": 3,
-      "prerrequisitos": ["Taller IV: Diseño de Producto],
+      "prerrequisitos": ["Taller IV: Diseño de Producto"],
       "descripcion": "Diseño e implementación de prototipos interactivos físicos y digitales.",
       "enfasis": true
     },
